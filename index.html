@@ -1,18 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSUS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSUS - Aranmula Panchayat Information System</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color:#e9e9e9;
+            color:#222;
+        }
+
+        /* Header Section */
+        .header{
+            background-color:#00796b;
+            color:white;
+            text-align:center;
+            padding:30px 20px;
+        }
+
+        .header img{
+            width:100%;
+            max-width:1000px;
+            height:420px;
+            object-fit:cover;
+            border-radius:10px;
+            margin-bottom:20px;
+        }
+
+        .header h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
+
+        .header h2{
+            font-size:26px;
+            font-weight:normal;
+        }
+
+        /* Main Content */
+        .container{
+            width:80%;
+            margin:40px auto;
+            background:white;
+            padding:40px;
+            border-radius:12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title{
+            color:#00796b;
+            margin-bottom:15px;
+            border-bottom:2px solid #00796b;
+            padding-bottom:10px;
+        }
+
+        p{
+            line-height:1.8;
+            margin-bottom:20px;
+            text-align:justify;
+        }
+
+        .university-image{
+            display:block;
+            margin:30px auto;
+            width:80%;
+            max-width:700px;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .features{
+            margin-left:30px;
+            margin-bottom:20px;
+        }
+
+        .features li{
+            margin-bottom:10px;
+        }
+
+        .btn-container{
+            text-align:center;
+            margin-top:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            background-color:#00796b;
+            color:white;
+            text-decoration:none;
+            padding:14px 28px;
+            border-radius:8px;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background-color:#004d40;
+        }
+
+        /* Contact Section */
+        .contact{
+            background:#dfeeee;
+            margin-top:40px;
+            padding:30px;
+            border-left:5px solid #00796b;
+            text-align:center;
+            border-radius:8px;
+        }
+
+        .contact h3{
+            margin-bottom:15px;
+            color:#004d40;
+        }
+
+        .contact p{
+            text-align:center;
+            margin-bottom:10px;
+        }
+
+        .contact a{
+            color:blue;
+            text-decoration:none;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#00796b;
+            color:white;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+
+            .header h1{
+                font-size:30px;
+            }
+
+            .header h2{
+                font-size:20px;
+            }
+
+            .container{
+                width:95%;
+                padding:20px;
+            }
+
+            .university-image{
+                width:100%;
+            }
+        }
+
+    </style>
 </head>
+
 <body>
-   <center><img width="1000" height="500" src="logo.jpeg" alt="SSUS Logo"></center> 
-   <center><h1>Welcome to SSUS</h1></center> 
-    <p>SSUS most commonly refers to the Sree Sankaracharya University of Sanskrit, a public university located in Kalady, Kerala, India. Established in 1993, it is dedicated to teaching and research in Sanskrit, Indology, and other Indian and foreign languages. 
-</p>
-<hr>
-    <img width="500" height="300" src="University.jpg" alt="SSUS University Image">
-    <hr>
-    <a href="https://ssus.ac.in/" target="_blank"><button>Visit SSUS Official Website</button></a>
+
+    <!-- Header Section -->
+    <div class="header">
+
+        <!-- Replace logo.jpeg with your own image -->
+        <img src="logo.jpeg" alt="SSUS Logo">
+
+        <h1>SSUS Information System</h1>
+        <h2>Aranmula Panchayat</h2>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <h2 class="section-title">About SSUS</h2>
+
+        <p>
+            SSUS most commonly refers to the 
+            <strong>Sree Sankaracharya University of Sanskrit</strong>, 
+            a public university located in Kalady, Kerala, India. 
+            Established in 1993, the university is dedicated to teaching 
+            and research in Sanskrit, Indology, Indian philosophy, social sciences, 
+            fine arts, and foreign languages.
+        </p>
+
+        <p>
+            The university promotes higher education and cultural heritage 
+            through academic excellence, innovative research, and community engagement. 
+            SSUS has various regional centers across Kerala and provides opportunities 
+            for students and researchers in multiple disciplines.
+        </p>
+
+        <h2 class="section-title">About the Information System</h2>
+
+        <p>
+            This portal acts as a digital information system for educational 
+            and community awareness. It helps users explore university information, 
+            facilities, academic activities, and related resources.
+        </p>
+
+        <ul class="features">
+            <li><strong>Academic Programs:</strong> Sanskrit, Social Sciences, Fine Arts, Languages</li>
+            <li><strong>Research Activities:</strong> Cultural and interdisciplinary studies</li>
+            <li><strong>Campus Information:</strong> Infrastructure and facilities</li>
+            <li><strong>Community Engagement:</strong> Educational outreach programs</li>
+        </ul>
+
+        <!-- Replace University.jpg with SSUS University photo -->
+        <img src="University.jpg" alt="SSUS University Photo" class="university-image">
+
+        <!-- Button -->
+        <div class="btn-container">
+            <a href="https://ssus.ac.in/" target="_blank" class="btn">
+                Visit SSUS Official Website
+            </a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+
+            <h3>Contact Details</h3>
+
+            <p><strong>Name:</strong> Suresh S</p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:drsureshselvaraj@gmail.com">
+                    drsureshselvaraj@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 SSUS Information System | Aranmula Panchayat
+    </footer>
+
 </body>
 </html>
